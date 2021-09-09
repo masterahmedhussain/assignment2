@@ -18,7 +18,7 @@ public abstract class CrackerFactory {
  
 	public Cracker makeCracker(String type) {
 		Cracker cracker = createCracker(type);
-//		System.out.println("--- Making a " + cracker.getName() + " ---");
+		System.out.println("--- Making a " + cracker.getName() + " ---");
 		cracker.prepare();
 		cracker.bake();
 		cracker.cut();
